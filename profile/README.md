@@ -2,7 +2,7 @@
 
 ### Table of Contents
 * [Prerequisites](#prerequisites)
-* [Setup](#setup)
+* [Setup (Backend/Frontend)](#setup)
 * [Getting Started](#getting_started)
 * [Running the Application](#runapp)
 
@@ -52,7 +52,7 @@
         * Open [SSH and GPG keys](https://github.com/settings/keys) from GitHub Account
         * Click `New SSH key` button paste the copied `ssh keys` and add
 
-## Setup - Backend/Frontend
+## Setup
 
 1. Fork the Repository
     * From main resource click the `Fork`
