@@ -83,7 +83,7 @@
     ```
     git pull <remote_name> <branch_name>
     ```
-    * If you encounter `error: failed to push some refs to` or `refspec does not match`   always check what branch are you:
+    * If you encounter `error: failed to push some refs to` or `refspec does not match`   always check what branch you are:
     ```
     git branch -a
     ```
