@@ -21,7 +21,7 @@
     ```
     docker --version
     ```
-3. `IDE Terminal` Highly Recommend of using `VSCode`
+3. `IDE Terminal` Highly Recommend to use `VSCode`
     * Download and install VSCode from [Visual Studio Code official website](https://code.visualstudio.com/download)
     * Recommend extensions:
         * Prisma
