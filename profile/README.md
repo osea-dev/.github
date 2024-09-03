@@ -5,6 +5,8 @@
 * [Setup (Backend/Frontend)](#setup)
 * [Getting Started](#getting_started)
 * [Running the Application](#runapp)
+* [Contributing](#contributing)
+<!-- * [License](#license) -->
 
 
 ## Prerequisites
@@ -30,7 +32,7 @@
         * ESLint
         * Prettier ESLint
         * Vue - Official
-        * *to be added in the future*
+        * *will add soon for best practices*
 
 4. `Git`
     * Download and install Git for [Windows](https://git-scm.com/download/win) for [MacOS](https://git-scm.com/download/mac)
@@ -39,7 +41,7 @@
         ```
         ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
         ```
-        * Type `command` below to locate to `ssh` folder
+        * Type `command` below to locate `ssh` folder
         ```
         cd ~/.ssh
         ```
@@ -55,6 +57,7 @@
 ## Setup
 
 1. Fork the Repository
+
     * From main resource click the `Fork`
     ![alt text](../assets/img/image.png)
     * Then `Create Fork`
@@ -67,6 +70,7 @@
 
 
 2. Clone the Repository
+
     * Clone the repository from your `Fork Repository`:
     ```
     git remote add <remote_name> <ssh_repository_link>
@@ -83,4 +87,26 @@
     ```
     git branch -a
     ```
-    
+## Getting Started
+
+1. Environment Variables
+
+    * Create a copy from `.env.example`
+    ```
+    cp .env.example .env
+    ```
+2. Running Services
+
+    * Start the app using Docker Compose:
+    ```
+    docker-compose up -d
+    ```
+
+## Contributing
+
+> **_NOTE:_** This will cover best practices approaches for contributing the codes.
+
+-  Naming Convention 
+-  Code Format
+-  Git Commits Message Format
+
