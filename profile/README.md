@@ -56,17 +56,17 @@
 
 1. Fork the Repository
     * From main resource click the `Fork`
-    ![alt text](image.png)
+    ![alt text](../assets/img/image.png)
     * Then `Create Fork`
-    ![alt text](image-1.png)
+    ![alt text](../assets/img/image-1.png)
     * Copy the `SSH` link 
-    ![alt text](image-2.png)
+    ![alt text](../assets/img/image.png)
 
 
 > **_NOTE:_** Create separate folder for backend & frontend
 
 
-1. Clone the Repository
+2. Clone the Repository
     * Clone the project repository from [Osea Dev Organization Repo](https://github.com/osea-dev):
     ```
     git remote add <remote_name> <ssh_repository_link>
