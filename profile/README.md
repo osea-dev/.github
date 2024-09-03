@@ -3,8 +3,7 @@
 ### Table of Contents
 * [Prerequisites](#prerequisites)
 * [Setup (Backend/Frontend)](#setup)
-* [Getting Started](#getting_started)
-* [Running the Application](#runapp)
+* [Getting Started](#getting-started)
 * [Contributing](#contributing)
 <!-- * [License](#license) -->
 
