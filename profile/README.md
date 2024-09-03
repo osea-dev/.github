@@ -104,7 +104,7 @@
 
 ## Contributing
 
-> **_NOTE:_** This will cover best practices approaches for contributing the codes.
+> **_NOTE:_** This will cover codes contribution rules and best practices approach.
 
 -  Naming Convention 
 -  Code Format
