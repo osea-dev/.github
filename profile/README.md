@@ -60,7 +60,7 @@
     * Then `Create Fork`
     ![alt text](../assets/img/image-1.png)
     * Copy the `SSH` link 
-    ![alt text](../assets/img/image.png)
+    ![alt text](../assets/img/image-2.png)
 
 
 > **_NOTE:_** Create separate folder for backend & frontend
