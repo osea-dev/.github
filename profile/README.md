@@ -67,7 +67,7 @@
 
 
 2. Clone the Repository
-    * Clone the project repository from [Osea Dev Organization Repo](https://github.com/osea-dev):
+    * Clone the repository from your `Fork Repository`:
     ```
     git remote add <remote_name> <ssh_repository_link>
     ```
@@ -79,7 +79,6 @@
     ```
     git pull <remote_name> <branch_name>
     ```
-
     * If you encounter `error: failed to push some refs to` or `refspec does not match`   always check what branch are you:
     ```
     git branch -a
