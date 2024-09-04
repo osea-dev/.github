@@ -53,6 +53,24 @@
         * Open [SSH and GPG keys](https://github.com/settings/keys) from GitHub Account
         * Click `New SSH key` button paste the copied `ssh keys` and add
 
+- #### This guidelines below is node installation for MacOS using node version manager:
+
+1. Install `Homebrew`, refer to this [docs](https://docs.brew.sh/Installation)
+
+2. Once `Homebrew` was installed, you can now install `nvm` refer to the command below:
+
+    ```
+    brew install nvm
+    ```
+
+    ```
+    export NVM_DIR="$HOME/.nvm" [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+    ```
+3. Once `nvm` was installed, you can now install different version of node: but we prefer to install `v18.20.4`
+    ```
+    nvm install 18.20.4
+    ```
+
 ## Setup
 
 1. Fork the Repository
@@ -88,18 +106,52 @@
     ```
 ## Getting Started
 
+
+> **_NOTE:_** Highly recommend to merge into one folder the frontend & backend folder
+>
+>```
+>...
+><folder_name>/
+>--- frontend/
+>--- backend/
+>...
+>```
+
+
 1. Environment Variables
 
     * Create a copy from `.env.example`
     ```
     cp .env.example .env
     ```
+
+2. Install Packages
+
+    * Install `pnpm` globally
+    ```
+    npm i -g pnpm
+    ```
+
+    * Install frontend/backend packages inside their folder
+    ```
+    pnpm install 
+    ```
+
 2. Running Services
 
     * Start the app using Docker Compose:
     ```
     docker-compose up -d
     ```
+
+
+> **_NOTE:_** for backend you must do migrations.
+
+1. Run the `command`
+    ```
+    npx prisma migrate dev --name init
+    ```
+
 
 ## Contributing
 
