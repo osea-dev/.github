@@ -13,62 +13,90 @@
 > **_NOTE:_** Before running the project, ensure you have the following tools installed.
 
 1. `Ubuntu`
-    * If you are using MacOS; kindly disregard this Ubuntu Installation setup.
+    * If you are using MacOS; kindly disregard the Ubuntu Installation section.
     * Download and install `Ubuntu22.04.3 TLS` from `Microsoft Store`
+    * Setup WSL2 for your system
 
 2. `Docker`
-    * Download and install Docker from [Docker official website](https://www.docker.com/products/docker-desktop/)
-    * Verify the installation from terminal:
+    * Create an account for Docker in [Docker official website](app.docker.com/signup?)
+    * Download and install the version of Docker applicable for your system from [here](https://www.docker.com/products/docker-desktop/) 
+    * Verify the installation from your terminal:
     ```
     docker --version
     ```
-3. `IDE Terminal` Highly Recommend to use `VSCode`
+
+3. `IDE Terminal` - Highly recommended to use `VSCode`
     * Download and install VSCode from [Visual Studio Code official website](https://code.visualstudio.com/download)
-    * Recommend extensions:
-        * Prisma
-        * Bracket Pair Color DLW
+    * Recommended extensions:
         * Docker
+        * Bracket Pair Color DLW
+        * Prisma
         * ESLint
         * Prettier ESLint
         * Vue - Official
-        * *will add soon for best practices*
+        * *will more add soon for best practices*
 
 4. `Git`
-    * Download and install Git for [Windows](https://git-scm.com/download/win) for [MacOS](https://git-scm.com/download/mac)
-    * Configure SSH for GitHub:
-        * Generate an SSH key
+    * Download and install Git for [Windows](https://git-scm.com/download/win) or for [MacOS](https://git-scm.com/download/mac)
+    * Configure SSH for GitHub using your terminal:
+        * Generate an SSH key using your GitHub email
         ```
         ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
         ```
-        * Type `command` below to locate `ssh` folder
+        * Type the command below to locate the `ssh` folder
         ```
         cd ~/.ssh
         ```
 
-        * Copy the public key 
+        * Copy the public key after typing the command below (key usually begins with 'ssh-rsa')
         ```
         cat ~/.ssh/id_rsa.pub
         ```
-    * Add SSH Key to your GitHub Account
+    * Add the SSH Key to your GitHub Account
         * Open [SSH and GPG keys](https://github.com/settings/keys) from GitHub Account
-        * Click `New SSH key` button paste the copied `ssh keys` and add
+        * Click `New SSH key` button and give the key a title of your choosing under Title
+        * Paste the copied `ssh key` under Key
+        * Click `Add SSH key`
 
-- #### This guidelines below is node installation for MacOS using node version manager:
+#### The guidelines below are for node installation in MacOS using node version manager or nvm:
 
-1. Install `Homebrew`, refer to this [docs](https://docs.brew.sh/Installation)
+1. Install `Homebrew` from [here](https://brew.sh)
 
-2. Once `Homebrew` was installed, you can now install `nvm` refer to the command below:
+2. Refer to the [documentations](https://docs.brew.sh/Installation) if you are experiencing issues with connecting to `GitHub.com`
+
+3. Once `Homebrew` was installed, you can now install `nvm` refer to the command below:
 
     ```
     brew install nvm
     ```
 
+    * Create a file using your terminal with
     ```
-    export NVM_DIR="$HOME/.nvm" 
-    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads 
-    nvm [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+    nano ~/.zshrc
     ```
-3. Once `nvm` was installed, you can now install different version of node: but we prefer to install `v18.20.4`
+    * Copy the text below and paste it into your terminal (do NOT press enter after pasting)
+    ```
+        # Set up NVM (Node Version Manager)
+        export NVM_DIR="$HOME/.nvm"
+
+        # Load NVM
+        if [ -s "/opt/homebrew/opt/nvm/nvm.sh" ]; then
+        . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads NVM
+        fi
+
+        # Load NVM bash completion (optional)
+        if [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ]; then
+        . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads bash completion for NVM
+        fi
+    ```
+    * Press <kbd>control</kbd> + <kbd>x</kbd>
+    * Press <kbd>y</kbd>
+    * Finally, hit <kbd>return</kbd>
+    * Now we can run our file with
+    ```
+    source ~/.zshrc
+    ```
+4. Once `nvm` was installed, you can now install different version of node: but we prefer to install `v18.20.4`
     ```
     nvm install 18.20.4
     ```
@@ -151,7 +179,7 @@
 
 1. Run the `command`
     ```
-    npx prisma migrate dev --name init
+    npx prisma migrate dev --name variable_name
     ```
 
 
