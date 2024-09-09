@@ -1,7 +1,7 @@
 ### Commit Message Header
 
 ```
-<type>[scope]: <short-summary>
+<type>(scope): <short-summary>
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │       │
@@ -12,7 +12,7 @@
 ```
 
 ```
-feat[users-mgmt]: add new button
+feat(users-mgmt): add new button
 ```
 
 #### `<type>`
@@ -26,7 +26,17 @@ feat[users-mgmt]: add new button
 * `test`: Adding missing tests or correcting existing tests
 
 
-#### `<scope>`
+#### `(scope)`
+* `users-mgmt` 
+  * user; role; permission
+* `tours-mgmt`
+  * tour; tour-guide; booking; tour-schedule
+* `payments`
+  * payment; invoice
+* `study-programs`
+  * program; course; materials
+* `transactions`
+  * users-logs; 
 
 #### `<short-summary>` 
 
