@@ -34,7 +34,7 @@
         * ESLint
         * Prettier ESLint
         * Vue - Official
-        * *will more add soon for best practices*
+        * *will add more soon for best practices*
 
 4. `Git`
     * Download and install Git for [Windows](https://git-scm.com/download/win) or for [MacOS](https://git-scm.com/download/mac)
@@ -64,7 +64,7 @@
 
 2. Refer to the [documentations](https://docs.brew.sh/Installation) if you are experiencing issues with connecting to `GitHub.com`
 
-3. Once `Homebrew` was installed, you can now install `nvm` refer to the command below:
+3. Once `Homebrew` is installed, you can now install `nvm` refer to the command below:
 
     ```
     brew install nvm
@@ -96,7 +96,7 @@
     ```
     source ~/.zshrc
     ```
-4. Once `nvm` was installed, you can now install different version of node: but we prefer to install `v18.20.4`
+4. Once `nvm` is installed, you can now install different versions of node: but we prefer to install `v18.20.4`
     ```
     nvm install 18.20.4
     ```
@@ -137,7 +137,7 @@
 ## Getting Started
 
 
-> **_NOTE:_** Highly recommend to merge into one folder the frontend & backend folder
+> **_NOTE:_** Highly recommended to put the frontend & backend folder under one folder as shown below
 >
 >```
 >...
