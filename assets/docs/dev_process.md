@@ -1,7 +1,9 @@
-### Development Process
+# Development Process
 
-* #### Test Driven Development
+* [Test Driven Development](#test-driven-development)
+* [Git Branching](#git-branching)
 
+# Test Driven Development
 ![alt text](../img/dev-process.png)
 
 
@@ -21,3 +23,39 @@
     - Duplication must be eliminated
     - Object definitions and names must be set to represent their purpose and usage
     - As more features are added, functions become lengthy. It can prove beneficial to split and carefully named to improve readability and maintainability
+
+
+
+# Git Branching
+![alt text](../img/git-branching.png)
+
+### HOW IT WORKS!
+
+ * create new branches
+    ```
+    git checkout -b <branch_name>
+    ```
+* check branches list, refer to image above
+    ```
+    git branch -a
+    ```
+    ```
+    git branch --all
+    ```
+    ```
+    git branch --list
+    ```
+
+    * This would look like this
+
+    ![alt text](../img/git-branching-merge.png)
+
+    * Whenever your about to create a new branches named after features your creating
+    * Let just say, adding a new <strong>button components</strong> as well as <strong>skeleton loading</strong> was done
+
+* based on image above; all **created feature** need to merge to `dev` branches
+    ```
+    git merge --no-ff <branch> -m <msg>
+    ```
+    > **NOTE** : refer to the [commit message docs](https://github.com/osea-dev/.github/blob/main/assets/docs/git_commits_message_format.md)
+
