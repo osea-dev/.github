@@ -27,16 +27,19 @@ feat(users-mgmt): add new button
 
 
 #### `(scope)`
+
+> Business model summarization 
+
 * `users-mgmt` 
-  * user; role; permission
+  * user | role | permission
 * `tours-mgmt`
-  * tour; tour-guide; booking; tour-schedule
+  * tour | tour-guide | booking | tour-schedule
 * `payments`
-  * payment; invoice
+  * payment | invoice
 * `study-programs`
-  * program; course; materials
+  * program | course | materials
 * `transactions`
-  * users-logs; 
+  * users-logs 
 
 #### `<short-summary>` 
 
