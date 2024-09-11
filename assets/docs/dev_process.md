@@ -27,35 +27,35 @@
 
 
 # Git Branching
-![alt text](../img/git-branching.png)
+![alt text](../img/team-git-branching.png)
 
 ### HOW IT WORKS!
 
- * create new branches
-    ```
-    git checkout -b <branch_name>
-    ```
-* check branches list, refer to image above
-    ```
-    git branch -a
-    ```
-    ```
-    git branch --all
-    ```
-    ```
-    git branch --list
-    ```
+ * ### do `git checkout <options>`
+    * using `-b` options will create new branch by adding `<branch_name>`
+    * `git checkout -b <branch_name>`
+    * without `-b` option will switch branch by adding `<branch_name>`
+    * `git checkout <branch_name>`
+    
+* ### do `git branch <options>`
+    * using `-a` or `--all` will display list of remote-tracking branches
+    * `git branch -a`
+    * `git branch --all`
 
-    * This would look like this
-
-    ![alt text](../img/git-branching-merge.png)
+        ![alt text](../img/git-branch-a.png)
 
     * Whenever your about to create a new branches named after features your creating
     * Let just say, adding a new <strong>button components</strong> as well as <strong>skeleton loading</strong> was done
 
-* based on image above; all **created feature** need to merge to `dev` branches
-    ```
-    git merge --no-ff <branch> -m <msg>
-    ```
-    > **NOTE** : refer to the [commit message docs](https://github.com/osea-dev/.github/blob/main/assets/docs/git_commits_message_format.md)
+
+>**NOTE**: `git merge` command is used by `git pull` to incorporate changes from another repository
+* ### do `git merge <options>`
+    * Let just say, **BUTTON COMPONENTS**, **SKELETON LOADING** `feature` was done; do merge
+    * To merge:
+        * switch branch to `main`
+        * do `git merge --no-ff <feature_name> -m <msg>` refer to the [git commit message docs](https://github.com/osea-dev/.github/blob/main/assets/docs/git_commits_message_format.md)
+
+    * using `--no-ff` options preserves the branch history and clearly indicates that a merge happened
+    
+* ### do `pull-request`
 
