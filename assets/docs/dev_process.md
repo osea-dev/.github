@@ -44,10 +44,6 @@
 
         ![alt text](../img/git-branch-a.png)
 
-    * Whenever your about to create a new branches named after features your creating
-    * Let just say, adding a new <strong>button components</strong> as well as <strong>skeleton loading</strong> was done
-
-
 >**NOTE**: `git merge` command is used by `git pull` to incorporate changes from another repository
 * ### do `git merge <options>`
     * Let just say, **BUTTON COMPONENTS**, **SKELETON LOADING** `feature` was done; do merge
