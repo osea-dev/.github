@@ -8,7 +8,7 @@
 <!-- * [License](#license) -->
 
 
-## Prerequisites
+## Setup
 
 > **_NOTE:_** Before running the project, ensure you have the following tools installed.
 
@@ -34,6 +34,7 @@
         * ESLint
         * Prettier ESLint
         * Vue - Official
+        * Nuxtr 
         * *will add more soon for best practices*
 
 4. `Git`
@@ -101,41 +102,42 @@
     nvm install 18.20.4
     ```
 
-## Setup
+## Cloning
 
-1. Fork the Repository
+<!-- 
+    1. Fork the Repository
 
     * From main resource click the `Fork`
     ![alt text](../assets/img/image.png)
     * Then `Create Fork`
     ![alt text](../assets/img/image-1.png)
     * Copy the `SSH` link 
-    ![alt text](../assets/img/image-2.png)
+    ![alt text](../assets/img/image-2.png) 
+-->
 
 
-> **_NOTE:_** Create separate folder for backend & frontend
+> **_NOTE:_** Create separate folders for your cloned repos
 
 
-2. Clone the Repository
+- Navigate to your desired folder and clone the desired repository
 
-    * Clone the repository from your `Fork Repository`:
+    * Copy the `SSH` link of desired repository
+    ![alt text](../assets/img/copy-ssh.png)
+
+    * Clone the repository from the main repository:
     ```
-    git remote add <remote_name> <ssh_repository_link>
+    git clone <ssh_repository_link>
     ```
     * Verify the remote added:
     ```
     git remote -v
     ```
-    * Pull the codes:
-    ```
-    git pull <remote_name> <branch_name>
-    ```
-    * If you encounter `error: failed to push some refs to` or `refspec does not match`   always check what branch you are:
+    * If you encounter `error: failed to push some refs to` or `refspec does not match` always check on which branch you are currently on:
     ```
     git branch -a
     ```
-## Getting Started
 
+## Running the app
 
 > **_NOTE:_** Highly recommended to put the frontend & backend folder under one folder as shown below
 >
@@ -157,12 +159,12 @@
 
 2. Install Packages
 
-    * Install `pnpm` globally
+    * Install `pnpm` globally:
     ```
     npm i -g pnpm
     ```
 
-    * Install frontend/backend packages inside their folder
+    * Install frontend/backend packages inside their folder:
     ```
     pnpm install 
     ```
@@ -173,15 +175,19 @@
     ```
     docker-compose up -d
     ```
+    * Check if the app is running by going into Docker and selecting the `Containers` tab
+    ![alt text](../assets/img/docker-containers.png)
+
+    * Your app should now be running under the address provided by `Docker`
+    ![alt text](../assets/img/app-run.png)
 
 
 > **_NOTE:_** for backend you must do migrations.
 
-1. Run the `command`
+4. Run the `command`:
     ```
     npx prisma migrate dev --name variable_name
     ```
-
 
 ## Contributing
 
@@ -190,5 +196,3 @@
 -  Naming Convention 
 -  Code Format
 -  Git Commits Message Format
-
-test
