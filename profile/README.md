@@ -15,7 +15,7 @@
 1. `Ubuntu`
     * If you are using MacOS; kindly disregard the Ubuntu Installation section.
     * Download and install `Ubuntu22.04.3 TLS` from `Microsoft Store`
-    * Setup WSL2 for your system
+    * Setup WSL2 for your system using this [guide from Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 2. `Docker`
     * Create an account for Docker in [Docker official website](app.docker.com/signup?)
@@ -128,6 +128,10 @@
     ```
     git clone <ssh_repository_link>
     ```
+    * Navigate to repository directory
+    ```
+    cd <repository_folder>
+    ```
     * Verify the remote added:
     ```
     git remote -v
@@ -191,8 +195,9 @@
 
 ## Contributing
 
-> **_NOTE:_** This will cover codes contribution rules and best practices approach.
+> **_NOTE:_** This will cover the rules and best practices for contributing to the codebase.
 
 -  Naming Convention 
 -  Code Format
 -  Git Commits Message Format
+-  Schedule for Merging and Pull Requests
