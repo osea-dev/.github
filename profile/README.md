@@ -198,6 +198,92 @@
 > **_NOTE:_** This will cover the rules and best practices for contributing to the codebase.
 
 -  Naming Convention 
--  Code Format
--  Git Commits Message Format
+
+    ## Frontend File-structure
+    ```
+    apps/
+    └── frontend/
+            ├── public/
+            ├── components/
+            |    └── .../
+            ├── locales/
+            |    ├── zh.json
+            |    └── en_uk.json
+            ├── pages/
+            |    └── .../
+            ├── src/
+            |    └── .../
+            └── test/
+            app.vue
+            nuxt.config.ts
+            tsconfig.json
+    packages/
+    ├── eslint-config-custom/
+    └── stylelint-config-custom/
+    ...
+    docker-compose.yml
+    Dockerfile
+    ```
+
+    ## components
+    - Singular 
+    - Pascal Case
+    - Encapsule each components in folder
+
+        #### ✅ Do This
+        ```
+        ...
+        components/
+            Block/
+                ├── Block.vue
+                └── Block.spec.ts
+        ...
+        ```
+
+        #### ❌ Don't Do This
+        ```
+        ...
+        components/
+        ├── blocks.vue
+        └── blocks.spec.ts
+        ...
+            cards/
+                ├── card.vue
+                └── card.spec.ts
+            ...
+        ...
+        ```
+
+    ## pages
+    - Singular
+    - Pascal Case
+    - Encapsule each components in folder
+
+        #### ✅ Do This
+        ```
+        ...
+        pages/
+            sample/
+                ├── Sample.vue
+                └── Sample.spec.ts
+                [...404].vue
+        ...
+        ```
+
+        #### ❌ Don't Do This
+        ```
+        ...
+        pages/
+        ├── samplePages.vue
+        └── samplePages.spec.ts
+        ...
+            samplePages/
+                ├── samplePages.vue
+                └── samplePages.spec.ts
+        ...
+        ```
+
+
+
+-  [Git Commits Message Format](https://github.com/osea-dev/.github/blob/main/assets/docs/git_commits_message_format.md)
 -  Schedule for Merging and Pull Requests
