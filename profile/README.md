@@ -18,7 +18,7 @@
     * Setup WSL2 for your system using this [guide from Microsoft](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 2. `Docker`
-    * Create an account for Docker in [Docker official website](app.docker.com/signup?)
+    * Create an account for Docker in [Docker official website](https://app.docker.com/signup?)
     * Download and install the version of Docker applicable for your system from [here](https://www.docker.com/products/docker-desktop/) 
     * Verify the installation from your terminal:
     ```
@@ -63,7 +63,13 @@
 
 1. Install `Homebrew` from [here](https://brew.sh)
 
-2. Refer to the [documentations](https://docs.brew.sh/Installation) if you are experiencing issues with connecting to `GitHub.com`
+2. Copy the following into your terminal:
+    
+    ```
+    export HOMEBREW_NO_INSTALL_FROM_API=1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+    Refer to the [documentations](https://docs.brew.sh/Installation) for why we are doing this or if you are experiencing issues with connecting to `GitHub.com`
 
 3. Once `Homebrew` is installed, you can now install `nvm` refer to the command below:
 
@@ -128,7 +134,7 @@
     ```
     git clone <ssh_repository_link>
     ```
-    * Navigate to repository directory
+    * Navigate to repository directory:
     ```
     cd <repository_folder>
     ```
@@ -228,7 +234,7 @@
     ## components
     - Singular 
     - Pascal Case
-    - Encapsule each components in folder
+    - Encapsulate each component in folders
 
         #### ✅ Do This
         ```
@@ -257,7 +263,7 @@
     ## pages
     - Singular
     - Pascal Case
-    - Encapsule each components in folder
+    - Encapsulate each page in folders
 
         #### ✅ Do This
         ```
